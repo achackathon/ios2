@@ -15,6 +15,18 @@ class ResumoViewController: UIViewController {
     @IBOutlet weak var precoAgendamento: UILabel!
     @IBOutlet weak var servicoAgendado: UILabel!
     
+    @IBAction func finalizar(sender: AnyObject) {
+        let alert = UIAlertController(title: "Corta pra mim", message: "Pedido finalizado com sucesso!", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:{ (UIAlertAction) in
+            let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TelaInicial")
+            
+            self.presentViewController(nextVC, animated: true, completion: nil)
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
     var agendamento: Agendamento!
     override func viewDidLoad() {
         super.viewDidLoad()
