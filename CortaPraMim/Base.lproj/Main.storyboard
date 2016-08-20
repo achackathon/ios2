@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -105,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="969" y="404"/>
         </scene>
-        <!--View Controller-->
+        <!--Onde View Controller-->
         <scene sceneID="LWf-Sq-ESq">
             <objects>
-                <viewController id="9Ec-Gk-C7S" sceneMemberID="viewController">
+                <viewController id="9Ec-Gk-C7S" customClass="OndeViewController" customModule="CortaPraMim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TNI-Vd-6tp"/>
                         <viewControllerLayoutGuide type="bottom" id="JkW-ey-Vz0"/>
@@ -117,15 +118,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Onde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euy-cK-Kfa">
-                                <rect key="frame" x="279" y="93" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBO-60-4gZ" customClass="GMSMapView">
+                                <rect key="frame" x="20" y="65" width="560" height="447"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qk3-Uh-8gC">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tvt-2P-KYg"/>
+                                </constraints>
+                                <state key="normal" title="Próximo passo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euy-cK-Kfa">
+                                <rect key="frame" x="253" y="20" width="94" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="3NW-ZI-2tS"/>
+                                    <constraint firstAttribute="height" constant="31" id="AbU-6b-U8v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="37"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LBO-60-4gZ" firstAttribute="leading" secondItem="Iwg-yM-3ee" secondAttribute="leadingMargin" id="AXu-Sz-Hpt"/>
+                            <constraint firstItem="Qk3-Uh-8gC" firstAttribute="top" secondItem="LBO-60-4gZ" secondAttribute="bottom" constant="38" id="BUn-kx-Rmn"/>
+                            <constraint firstItem="LBO-60-4gZ" firstAttribute="centerX" secondItem="Qk3-Uh-8gC" secondAttribute="centerX" id="Lbo-Yo-4a7"/>
+                            <constraint firstItem="Euy-cK-Kfa" firstAttribute="centerX" secondItem="LBO-60-4gZ" secondAttribute="centerX" id="Z8F-7v-mWP"/>
+                            <constraint firstItem="Qk3-Uh-8gC" firstAttribute="bottom" secondItem="JkW-ey-Vz0" secondAttribute="top" id="cXp-h9-d9G"/>
+                            <constraint firstItem="Qk3-Uh-8gC" firstAttribute="leading" secondItem="Iwg-yM-3ee" secondAttribute="leading" id="sCo-J5-8pA"/>
+                            <constraint firstItem="LBO-60-4gZ" firstAttribute="top" secondItem="Euy-cK-Kfa" secondAttribute="bottom" constant="14" id="uMH-UL-XIT"/>
+                            <constraint firstItem="Euy-cK-Kfa" firstAttribute="top" secondItem="Iwg-yM-3ee" secondAttribute="top" constant="20" symbolic="YES" id="xEt-FI-aDm"/>
+                            <constraint firstAttribute="trailing" secondItem="Qk3-Uh-8gC" secondAttribute="trailing" id="yUJ-2P-tge"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="LBO-60-4gZ" id="xGp-8s-LR6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDN-fz-6y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
