@@ -14,6 +14,7 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     @IBOutlet weak var mapView: GMSMapView!
     let locationManager = CLLocationManager()
     var listaEstabelecimentos : [Estabelecimento]?
+    var tipoServicoReq : TipoServico?
     
     override func viewDidLoad() {
         super.viewDidLoad()

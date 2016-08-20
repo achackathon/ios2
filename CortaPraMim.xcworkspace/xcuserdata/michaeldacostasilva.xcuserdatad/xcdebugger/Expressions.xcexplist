@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "OndeViewController.viewDidLoad() -&gt; ():OndeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tipoServicoReq">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "OndeViewController.locationManager(CLLocationManager, didUpdateLocations : [CLLocation]) -&gt; ():OndeViewController.swift">
          <PersistentStrings>
             <PersistentString
