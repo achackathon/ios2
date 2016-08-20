@@ -233,7 +233,9 @@
 			files = (
 				793B6E631D688A650032F297 /* Globals.swift in Sources */,
 				793B6E4E1D68847C0032F297 /* ViewController.swift in Sources */,
+				AF5CDF401D688868002E633D /* Agendamento.swift in Sources */,
 				793B6E4C1D68847C0032F297 /* AppDelegate.swift in Sources */,
+				AF5CDF421D688A9C002E633D /* EstabelecimentoController.swift in Sources */,
 				793B6E541D68847C0032F297 /* CortaPraMim.xcdatamodeld in Sources */,
 				793B6E661D688C370032F297 /* OndeViewController.swift in Sources */,
 			);
