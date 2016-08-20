@@ -11,10 +11,13 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var viewServicos: UIView!
+    @IBOutlet weak var agendamentosButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.viewServicos.layer.cornerRadius = 40
+        self.agendamentosButton.layer.cornerRadius = 20
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +26,10 @@ class HomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "AgendamentosSegue" {
+            return
+        }
         
         let destination = segue.destinationViewController as! OndeViewController
         let tipoServReq = TipoServico()
