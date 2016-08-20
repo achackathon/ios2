@@ -11,4 +11,5 @@ import UIKit
 final class TipoServico  {
     var idServico: Int?
     var NomeServico: String?
+    var icon : String?
 }

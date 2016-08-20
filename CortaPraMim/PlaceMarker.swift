@@ -17,7 +17,7 @@ class PlaceMarker: GMSMarker {
         self.estabelecimento = estabelecimento
         super.init()
         position = estabelecimento.location
-        //icon = UIImage(named: place.icon!+"_pin")
+        icon = UIImage(named: estabelecimento.Servico.icon!)
         groundAnchor = CGPoint(x: 0.5, y: 1)
         appearAnimation = kGMSMarkerAnimationPop
     }

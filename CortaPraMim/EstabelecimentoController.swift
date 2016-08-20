@@ -35,7 +35,7 @@ class EstabelecimentoController: NSObject {
         fabs.Nome = "Manicure Fabiula"
         fabs.Servico = TipoServicoController().Servicos[3]
         fabs.location = CLLocationCoordinate2D(latitude: -19.933519, longitude: -43.935653)
-        fabs.Valor = 0.0
+        fabs.Valor = 12.0
         
         let cortFem = Estabelecimento()
         cortFem.Nome = "So corte Fem"
