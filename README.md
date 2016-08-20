@@ -4,7 +4,7 @@ Corta pra mim - Agendamento de serviços
 Sobre o Aplicativo
 -------------
 
-Este projeto foi criado para o Hackathon da Avenue Code - Making life easier por @fransber, @michaelbh e @henriquemaza.
+Este projeto foi criado para o Hackathon da Avenue Code - Making life easier por [@fransber](http://twitter.com/Fransber), [@michaelbr](http://twitter.com/MichaelBR) e [@henriquemaza](http://twitter.com/Henriquemaza).
 
 Corta pra mim é um aplicativo para o agendamento de serviços de barbearia e beleza, buscando todos os fornecedores cadastrados deste tipo de trabalho que estão próximos ao usuário ou em um lugar específico.
 
