@@ -15,6 +15,7 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     let locationManager = CLLocationManager()
     var listaEstabelecimentos : [Estabelecimento]?
     var tipoServicoReq : TipoServico?
+    var estabelecimentoSel : Estabelecimento?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,6 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         mapView.settings.myLocationButton = true
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
-        
     }
 
     
@@ -45,14 +45,14 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         locationManager.stopUpdatingLocation()
         
         if let location = locations.first! as CLLocation! {
-            listaEstabelecimentos = EstabelecimentoController.getEstabelecimento(location.coordinate)
+            listaEstabelecimentos = EstabelecimentoController.getEstabelecimentoPorServico(self.tipoServicoReq!.idServico!, local: location.coordinate)
             
             dispatch_async(dispatch_get_main_queue(), {
                 self.mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
                 
                 for item in self.listaEstabelecimentos! {
-                    let marker = GMSMarker()
-                    marker.position = CLLocationCoordinate2DMake(item.location.latitude, item.location.longitude)
+                    let marker = PlaceMarker(estabelecimento: item)
+                    //marker.position = CLLocationCoordinate2DMake(item.location.latitude, item.location.longitude)
                     marker.title = item.Nome
                     marker.snippet = "Tipo de Serviço: \(item.Servico.NomeServico!)\nValor: R$ \(item.Valor.format(".2"))"
                     marker.map = self.mapView
@@ -66,11 +66,34 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     }
     
     func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
-        
+        let estab = marker as! PlaceMarker
+        self.estabelecimentoSel = estab.estabelecimento
+
         return false
     }
     
     func mapView(mapView: GMSMapView, didTapInfoWindowOfMarker marker: GMSMarker) {
-
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        
+        if identifier == "voltarPrincipalSegue" {
+            return true
+        } else {
+            
+            if self.estabelecimentoSel == nil {
+                
+                let alerta = UIAlertView(title: "Atenção", message: "Você precisa selecionar um estabelecimento.", delegate: nil, cancelButtonTitle: "OK!")
+                alerta.show()
+                return false
+            }
+        }
+        
+        return true
     }
 }

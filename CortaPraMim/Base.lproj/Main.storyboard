@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vjF-lJ-kB0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vjF-lJ-kB0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -126,7 +126,11 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Selecione o local" id="BY7-za-iN9">
-                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Zpe-pN-vwA"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Zpe-pN-vwA">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="voltarPrincipalSegue" id="IzC-wb-zDG"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Quando" id="UDE-zw-SfH"/>
                                     </navigationItem>
                                 </items>
@@ -151,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDN-fz-6y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="397"/>
+            <point key="canvasLocation" x="1718" y="404"/>
         </scene>
         <!--Resumo View Controler-->
         <scene sceneID="Yxh-G2-i33">
@@ -230,6 +234,7 @@
         <image name="tesoura" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BAd-mg-knE"/>
+        <segue reference="IzC-wb-zDG"/>
+        <segue reference="yvp-Gi-Vfz"/>
     </inferredMetricsTieBreakers>
 </document>
