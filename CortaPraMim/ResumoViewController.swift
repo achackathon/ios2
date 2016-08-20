@@ -21,6 +21,21 @@ class ResumoViewController: UIViewController {
     var horarioSelecionado: Int?
     
     @IBAction func finalizar(sender: AnyObject) {
+        
+        let agendamento = Agendamento()
+        agendamento.Dia = NSDate()
+        agendamento.Hora = horarioSelecionado
+        if let estab = estabelecimentoSel {
+            agendamento.NomeEstabelecimento = estab.Nome
+            agendamento.Servico = estab.Servico
+            agendamento.Valor = estab.Valor
+            agendamento.Marcado = true
+            
+        }
+        
+        AgendamentoController.setAgendamento(agendamento)
+        
+        
         let alert = UIAlertController(title: "Corta pra mim", message: "Pedido finalizado com sucesso!", preferredStyle: UIAlertControllerStyle.Alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:{ (UIAlertAction) in

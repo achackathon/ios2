@@ -12,7 +12,7 @@ import UIKit
 class Agendamento: NSObject {
     
     var NomeEstabelecimento: String?
-    var Servico: String?
+    var Servico: TipoServico?
     var Valor: Double?
     var Dia: NSDate?
     var Hora: Int? 

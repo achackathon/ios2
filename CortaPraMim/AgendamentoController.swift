@@ -11,7 +11,7 @@ import UIKit
 class AgendamentoController  {
     
     class func getHorariosDisponiveis(estabelecimento: Estabelecimento) -> [Horario] {
-        var listaAgendamento = [Agendamento]()
+        
         var listaHorarios = [Horario]()
         for i in 8...22 {
             let h = Horario()
@@ -21,7 +21,7 @@ class AgendamentoController  {
         
         
         var listaDoEstabelecimento =  [Agendamento]()
-        for ag in listaAgendamento {
+        for ag in AppDelegate.listaAgendamento {
             if ag.NomeEstabelecimento == estabelecimento.Nome {
                 listaDoEstabelecimento.append(ag)
             }
@@ -34,8 +34,11 @@ class AgendamentoController  {
                 }
             }
         }
-        
        return listaHorarios
+    }
+    
+    class func setAgendamento(agendamento: Agendamento) {
+        AppDelegate.listaAgendamento.append(agendamento)
     }
     
 }

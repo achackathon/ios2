@@ -40,11 +40,17 @@ class QuandoViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCellWithIdentifier("HorarioCell") as UITableViewCell!
         if let horario = horariosDisponiveis {
             cell!.textLabel?.text = String(horario[indexPath.row].hora!) + ":00"
+            if let bloqueado = horario[indexPath.row].Ocupado {
+                if bloqueado {
+                    cell!.backgroundColor = UIColor.grayColor()
+                    cell!.userInteractionEnabled = false
+                    cell!.textLabel?.text = String(horario[indexPath.row].hora!) + ":00 -  Ocupado"
+                    
+                }
+            }
         }
-        ////        let imageName = UIImage(named: horariosDisponiveis[indexPath.row].eventIcon + "_pin")
-        ////        cell!.imageView?.image = imageName
+        //cell!.textLabel?.textAlignment = .Center
         return cell!
-        
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

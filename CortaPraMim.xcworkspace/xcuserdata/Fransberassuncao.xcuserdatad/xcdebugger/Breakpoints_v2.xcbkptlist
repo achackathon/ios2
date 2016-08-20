@@ -2,4 +2,85 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CortaPraMim/AppDelegate.swift"
+            timestampString = "493415576.813187"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CortaPraMim.AppDelegate.__deallocating_deinit"
+                  moduleName = "CortaPraMim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Fransberassuncao/Documents/dev/ios2/CortaPraMim/AppDelegate.swift"
+                  timestampString = "493415577.455773"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CortaPraMim.AppDelegate.init () -&gt; CortaPraMim.AppDelegate"
+                  moduleName = "CortaPraMim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Fransberassuncao/Documents/dev/ios2/CortaPraMim/AppDelegate.swift"
+                  timestampString = "493415577.458602"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "CortaPraMim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Fransberassuncao/Documents/dev/ios2/CortaPraMim/AppDelegate.swift"
+                  timestampString = "493415577.458854"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CortaPraMim/AgendamentoController.swift"
+            timestampString = "493416130.837279"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "getHorariosDisponiveis(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
