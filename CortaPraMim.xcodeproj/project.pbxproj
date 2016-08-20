@@ -22,7 +22,6 @@
 		793B6E6C1D6896AF0032F297 /* Estabelecimentos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E691D6896AF0032F297 /* Estabelecimentos.swift */; };
 		793B6E6F1D68B84F0032F297 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E6E1D68B84F0032F297 /* PlaceMarker.swift */; };
 		793B6E731D68C6E70032F297 /* QuandoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E721D68C6E70032F297 /* QuandoViewController.swift */; };
-		793B6E751D68F6CB0032F297 /* AgendaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E741D68F6CB0032F297 /* AgendaController.swift */; };
 		AF3D652D1D689ECD00880067 /* TipoServico.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D652C1D689ECD00880067 /* TipoServico.swift */; };
 		AF3D652F1D689ED400880067 /* TipoServicoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D652E1D689ED400880067 /* TipoServicoController.swift */; };
 		AF3D65341D68AAA700880067 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D65331D68AAA700880067 /* Extension.swift */; };
@@ -49,7 +48,6 @@
 		793B6E691D6896AF0032F297 /* Estabelecimentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Estabelecimentos.swift; sourceTree = "<group>"; };
 		793B6E6E1D68B84F0032F297 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		793B6E721D68C6E70032F297 /* QuandoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuandoViewController.swift; sourceTree = "<group>"; };
-		793B6E741D68F6CB0032F297 /* AgendaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaController.swift; sourceTree = "<group>"; };
 		8D7B4581C5735438569A14A0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF3D652C1D689ECD00880067 /* TipoServico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoServico.swift; sourceTree = "<group>"; };
 		AF3D652E1D689ED400880067 /* TipoServicoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoServicoController.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				3B0A84D11D68A392005D7180 /* ResumoViewController.swift */,
 				793B6E6E1D68B84F0032F297 /* PlaceMarker.swift */,
 				AFC6FD741D68CC5900C172C5 /* AgendamentoController.swift */,
-				793B6E741D68F6CB0032F297 /* AgendaController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,7 +283,6 @@
 				793B6E731D68C6E70032F297 /* QuandoViewController.swift in Sources */,
 				793B6E631D688A650032F297 /* Globals.swift in Sources */,
 				AF3D65341D68AAA700880067 /* Extension.swift in Sources */,
-				793B6E751D68F6CB0032F297 /* AgendaController.swift in Sources */,
 				793B6E6A1D6896AF0032F297 /* Agendamento.swift in Sources */,
 				AFC6FD751D68CC5900C172C5 /* AgendamentoController.swift in Sources */,
 				793B6E4E1D68847C0032F297 /* HomeViewController.swift in Sources */,
