@@ -131,7 +131,11 @@
                                                 <segue destination="BYZ-38-t0r" kind="show" identifier="voltarPrincipalSegue" id="IzC-wb-zDG"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Quando" id="UDE-zw-SfH"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Quando" id="UDE-zw-SfH">
+                                            <connections>
+                                                <segue destination="ROH-FI-Hu6" kind="show" identifier="quandoSegue" id="tEM-4C-Ziz"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -197,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8e-fn-ima" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2340" y="384"/>
+            <point key="canvasLocation" x="2345" y="404"/>
         </scene>
         <!--Resumo View Controler-->
         <scene sceneID="Yxh-G2-i33">
@@ -277,6 +281,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IzC-wb-zDG"/>
-        <segue reference="yvp-Gi-Vfz"/>
+        <segue reference="KKg-yj-RUH"/>
     </inferredMetricsTieBreakers>
 </document>

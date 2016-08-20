@@ -82,9 +82,7 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         
-        if identifier == "voltarPrincipalSegue" {
-            return true
-        } else {
+        if identifier == "quandoSegue" {
             
             if self.estabelecimentoSel == nil {
                 
