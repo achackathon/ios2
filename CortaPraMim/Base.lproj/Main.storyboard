@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vjF-lJ-kB0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vjF-lJ-kB0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="TelaInicial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="CortaPraMim" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" id="BAd-mg-knE"/>
+                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" identifier="CorteMascSegue" id="BAd-mg-knE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ6-te-q7K">
@@ -57,7 +57,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" id="MSG-4J-uAc"/>
+                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" identifier="BarbaSegue" id="MSG-4J-uAc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1C-Wh-bks">
@@ -68,7 +68,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" id="yvp-Gi-Vfz"/>
+                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" identifier="CorteFemSegue" id="yvp-Gi-Vfz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwf-ny-D9l">
@@ -79,7 +79,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" id="MqQ-ih-hTw"/>
+                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" identifier="UnhaSegue" id="MqQ-ih-hTw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -126,7 +126,11 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Selecione o local" id="BY7-za-iN9">
-                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Zpe-pN-vwA"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Zpe-pN-vwA">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="voltarPrincipalSegue" id="IzC-wb-zDG"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Quando" id="UDE-zw-SfH"/>
                                     </navigationItem>
                                 </items>
@@ -151,7 +155,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDN-fz-6y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="397"/>
+            <point key="canvasLocation" x="1718" y="404"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bQC-14-GjZ">
+            <objects>
+                <viewController id="ROH-FI-Hu6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w37-oE-Jnr"/>
+                        <viewControllerLayoutGuide type="bottom" id="YDg-6V-Iza"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XeQ-EU-GcN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="li7-Sq-zma">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Quando" id="u6Z-AE-GE2">
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="vzx-va-OnF">
+                                            <connections>
+                                                <segue destination="9Ec-Gk-C7S" kind="show" id="KKg-yj-RUH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Resumo" id="aIK-sv-rNb">
+                                            <connections>
+                                                <segue destination="Fsn-Ma-SEr" kind="show" identifier="ResumoSegue" id="KyC-nx-Mnh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="li7-Sq-zma" secondAttribute="trailing" id="Pvx-Lb-KK9"/>
+                            <constraint firstItem="li7-Sq-zma" firstAttribute="leading" secondItem="XeQ-EU-GcN" secondAttribute="leading" id="Xk0-DI-x8E"/>
+                            <constraint firstItem="li7-Sq-zma" firstAttribute="top" secondItem="w37-oE-Jnr" secondAttribute="bottom" id="mbc-Mh-9kj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8e-fn-ima" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="384"/>
         </scene>
         <!--Resumo View Controler-->
         <scene sceneID="Yxh-G2-i33">
@@ -227,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3X-DQ-etJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336" y="404"/>
+            <point key="canvasLocation" x="3001" y="393"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WvK-FK-CVm">
