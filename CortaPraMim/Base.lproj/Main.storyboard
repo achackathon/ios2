@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CortaPraMim" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="CortaPraMim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -46,7 +46,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" id="BAd-mg-knE"/>
+                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" identifier="CorteMascSegue" id="BAd-mg-knE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ6-te-q7K">
@@ -57,7 +57,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" id="MSG-4J-uAc"/>
+                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" identifier="BarbaSegue" id="MSG-4J-uAc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1C-Wh-bks">
@@ -68,7 +68,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" id="yvp-Gi-Vfz"/>
+                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" identifier="CorteFemSegue" id="yvp-Gi-Vfz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwf-ny-D9l">
@@ -79,7 +79,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" id="MqQ-ih-hTw"/>
+                                            <segue destination="9Ec-Gk-C7S" kind="showDetail" identifier="UnhaSegue" id="MqQ-ih-hTw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDN-fz-6y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="397"/>
+            <point key="canvasLocation" x="1718" y="404"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bQC-14-GjZ">
