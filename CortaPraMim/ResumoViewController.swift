@@ -16,6 +16,7 @@ class ResumoViewController: UIViewController {
     @IBOutlet weak var precoAgendamento: UILabel!
     @IBOutlet weak var servicoAgendado: UILabel!
     
+    @IBOutlet weak var imgServico: UIImageView!
     var estabelecimentoSel : Estabelecimento?
     var horarioSelecionado: Int?
     
@@ -40,8 +41,10 @@ class ResumoViewController: UIViewController {
             horarioAtendimento.text = "20/08/2016 " +  String(hora) + ":00"
         }
         
+        imgServico.image = UIImage(named: estabelecimentoSel!.Servico.icon!)
+        
         if let val = estabelecimentoSel?.Valor {
-         precoAgendamento.text = "R$ " + String(val)
+         precoAgendamento.text = "Valor R$ " + String(val)
         }
         servicoAgendado.text = estabelecimentoSel?.Servico.NomeServico
     }
