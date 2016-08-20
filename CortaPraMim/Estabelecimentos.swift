@@ -15,6 +15,5 @@ class Estabelecimento: NSObject {
     var Servico: TipoServico?
     var Valor: Double?
     var location: CLLocationCoordinate2D?
-
     
 }
