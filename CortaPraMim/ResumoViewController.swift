@@ -46,4 +46,12 @@ class ResumoViewController: UIViewController {
         servicoAgendado.text = estabelecimentoSel?.Servico.NomeServico
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "voltarQuandoSegue"{
+            if let destinationViewController = segue.destinationViewController as? QuandoViewController {
+                destinationViewController.estabelecimentoSel = self.estabelecimentoSel
+            }
+        }
+    }
+    
 }

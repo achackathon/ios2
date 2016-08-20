@@ -58,6 +58,11 @@ class QuandoViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 destinationViewController.estabelecimentoSel = self.estabelecimentoSel
                 destinationViewController.horarioSelecionado = self.horarioSelecionado
             }
+        } else if segue.identifier == "voltarLocalSegue"{
+            if let destinationViewController = segue.destinationViewController as? OndeViewController {
+                destinationViewController.estabelecimentoSel = self.estabelecimentoSel
+                destinationViewController.tipoServicoReq = self.estabelecimentoSel!.Servico
+            }
         }
     }
     
@@ -75,24 +80,6 @@ class QuandoViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         return true
     }
-//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return horariosDisponiveis!.count
-//    }
-//    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        
-//        let cell = tableView.dequeueReusableCellWithIdentifier("EventTypeCell") as UITableViewCell!
-//        cell!.textLabel?.text = horariosDisponiveis![indexPath.row].hora!
-////        let imageName = UIImage(named: horariosDisponiveis[indexPath.row].eventIcon + "_pin")
-////        cell!.imageView?.image = imageName
-//        return cell!
-//    }
-//    
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//        self.view.endEditing(true)
-//    }
-//    
 }
 
 
