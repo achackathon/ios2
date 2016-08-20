@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="TelaInicial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="CortaPraMim" customModuleProvider="target" sceneMemberID="viewController">
@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="1718" y="404"/>
         </scene>
-        <!--View Controller-->
+        <!--Quando View Controller-->
         <scene sceneID="bQC-14-GjZ">
             <objects>
-                <viewController id="ROH-FI-Hu6" sceneMemberID="viewController">
+                <viewController id="ROH-FI-Hu6" customClass="QuandoViewController" customModule="CortaPraMim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w37-oE-Jnr"/>
                         <viewControllerLayoutGuide type="bottom" id="YDg-6V-Iza"/>
@@ -179,7 +179,7 @@
                                     <navigationItem title="Quando" id="u6Z-AE-GE2">
                                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="vzx-va-OnF">
                                             <connections>
-                                                <segue destination="9Ec-Gk-C7S" kind="show" id="KKg-yj-RUH"/>
+                                                <segue destination="9Ec-Gk-C7S" kind="show" identifier="voltarLocalSegue" id="KKg-yj-RUH"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Resumo" id="aIK-sv-rNb">
@@ -300,7 +300,7 @@
         <image name="tesoura" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IzC-wb-zDG"/>
         <segue reference="KKg-yj-RUH"/>
+        <segue reference="IzC-wb-zDG"/>
     </inferredMetricsTieBreakers>
 </document>

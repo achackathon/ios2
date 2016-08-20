@@ -77,7 +77,11 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        if segue.identifier == "quandoSegue" {
+            if let destinationViewController = segue.destinationViewController as? QuandoViewController {
+                destinationViewController.estabelecimentoSel = self.estabelecimentoSel
+            }
+        }
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
