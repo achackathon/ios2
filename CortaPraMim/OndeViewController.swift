@@ -13,8 +13,7 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     
     @IBOutlet weak var mapView: GMSMapView!
     let locationManager = CLLocationManager()
-    var listaEstabelecimentos = [Estabelecimento]()
-    
+    var listaEstabelecimentos : [Estabelecimento]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,17 +21,9 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         mapView.delegate = self
         mapView.myLocationEnabled = true
         mapView.settings.myLocationButton = true
-        
+        locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
-        carregarEstabelecimentos()
-        
-    }
-    
-    func carregarEstabelecimentos() {
-        for estab in listaEstabelecimentos {
-            
-        }
     }
 
     
@@ -53,8 +44,18 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         locationManager.stopUpdatingLocation()
         
         if let location = locations.first! as CLLocation! {
+            listaEstabelecimentos = EstabelecimentoController.getEstabelecimento(location.coordinate)
+            
             dispatch_async(dispatch_get_main_queue(), {
                 self.mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+                
+                for item in self.listaEstabelecimentos! {
+                    let marker = GMSMarker()
+                    marker.position = CLLocationCoordinate2DMake(item.location!.latitude, item.location!.longitude)
+                    marker.title = item.Nome
+                    //marker.snippet = "Australia"
+                    marker.map = self.mapView
+                }
             })
         }
     }
