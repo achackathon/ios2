@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -142,14 +141,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JkW-ey-Vz0" firstAttribute="top" secondItem="LBO-60-4gZ" secondAttribute="bottom" id="15l-CX-1NM"/>
-                            <constraint firstItem="LBO-60-4gZ" firstAttribute="leading" secondItem="Iwg-yM-3ee" secondAttribute="leadingMargin" id="AXu-Sz-Hpt"/>
-                            <constraint firstItem="yYM-qA-grN" firstAttribute="leading" secondItem="LBO-60-4gZ" secondAttribute="leading" id="NGy-KP-geV"/>
-                            <constraint firstItem="yYM-qA-grN" firstAttribute="trailing" secondItem="LBO-60-4gZ" secondAttribute="trailing" id="b0k-qF-9pM"/>
-                            <constraint firstItem="yYM-qA-grN" firstAttribute="top" secondItem="TNI-Vd-6tp" secondAttribute="bottom" id="dbf-ci-h7q"/>
-                            <constraint firstItem="LBO-60-4gZ" firstAttribute="top" secondItem="yYM-qA-grN" secondAttribute="bottom" constant="1" id="f7x-IZ-AWR"/>
-                            <constraint firstItem="LBO-60-4gZ" firstAttribute="trailing" secondItem="Iwg-yM-3ee" secondAttribute="trailing" id="jS8-ef-MBP"/>
-                            <constraint firstItem="LBO-60-4gZ" firstAttribute="leading" secondItem="Iwg-yM-3ee" secondAttribute="leading" id="nYw-Ba-OXz"/>
+                            <constraint firstItem="LBO-60-4gZ" firstAttribute="bottom" secondItem="JkW-ey-Vz0" secondAttribute="top" id="IhE-j2-CNq"/>
+                            <constraint firstItem="LBO-60-4gZ" firstAttribute="top" secondItem="yYM-qA-grN" secondAttribute="bottom" constant="1" id="foo-wm-XUn"/>
+                            <constraint firstAttribute="trailing" secondItem="yYM-qA-grN" secondAttribute="trailing" id="me0-LW-vDQ"/>
+                            <constraint firstItem="yYM-qA-grN" firstAttribute="leading" secondItem="LBO-60-4gZ" secondAttribute="leading" id="pTe-Rc-pHa"/>
+                            <constraint firstItem="yYM-qA-grN" firstAttribute="leading" secondItem="Iwg-yM-3ee" secondAttribute="leading" id="rT0-Bp-7FE"/>
+                            <constraint firstItem="yYM-qA-grN" firstAttribute="top" secondItem="TNI-Vd-6tp" secondAttribute="bottom" id="wlC-jN-DqW"/>
+                            <constraint firstItem="yYM-qA-grN" firstAttribute="trailing" secondItem="LBO-60-4gZ" secondAttribute="trailing" id="zHC-qI-YyT"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

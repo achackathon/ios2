@@ -10,13 +10,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CortaPraMim/OndeViewController.swift"
-            timestampString = "493406203.066558"
+            timestampString = "493409235.752694"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "shouldPerformSegueWithIdentifier(_:sender:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CortaPraMim/OndeViewController.swift"
+            timestampString = "493409235.752694"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CortaPraMim/OndeViewController.swift"
+            timestampString = "493409629.441685"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "OndeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CortaPraMim.OndeViewController.tipoServicoReq.setter : Swift.Optional&lt;CortaPraMim.TipoServico&gt;"
+                  moduleName = "CortaPraMim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaeldacostasilva/Documents/Desenvolvimento/iOS/CortaPraMim/CortaPraMim/OndeViewController.swift"
+                  timestampString = "493410308.468474"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "61">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CortaPraMim.OndeViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; CortaPraMim.OndeViewController"
+                  moduleName = "CortaPraMim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaeldacostasilva/Documents/Desenvolvimento/iOS/CortaPraMim/CortaPraMim/OndeViewController.swift"
+                  timestampString = "493410308.468728"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "213">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CortaPraMim.OndeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;CortaPraMim.OndeViewController&gt;"
+                  moduleName = "CortaPraMim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaeldacostasilva/Documents/Desenvolvimento/iOS/CortaPraMim/CortaPraMim/OndeViewController.swift"
+                  timestampString = "493410308.468908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "139">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
