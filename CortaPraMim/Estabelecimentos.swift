@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class Estabelecimento: NSObject {
     
     var Nome: String?
     var Servico: TipoServico?
     var Valor: Double?
+    var location: CLLocationCoordinate2D?
 
     
 }
