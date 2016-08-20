@@ -6,4 +6,15 @@
 //  Copyright © 2016 Team12. All rights reserved.
 //
 
-import Foundation
+
+import UIKit
+
+class Agendamento: NSObject {
+    
+    var NomeEstabelecimento: String?
+    var Servico: String?
+    var Valor: Double?
+    var Horario: NSDate?
+    
+    
+}
