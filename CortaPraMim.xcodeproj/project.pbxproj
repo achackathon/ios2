@@ -16,6 +16,9 @@
 		793B6E611D6887040032F297 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 793B6E601D6887040032F297 /* Podfile */; };
 		793B6E631D688A650032F297 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E621D688A650032F297 /* Globals.swift */; };
 		793B6E661D688C370032F297 /* OndeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E651D688C370032F297 /* OndeViewController.swift */; };
+		793B6E6A1D6896AF0032F297 /* Agendamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E671D6896AF0032F297 /* Agendamento.swift */; };
+		793B6E6B1D6896AF0032F297 /* EstabelecimentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E681D6896AF0032F297 /* EstabelecimentoController.swift */; };
+		793B6E6C1D6896AF0032F297 /* Estabelecimentos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E691D6896AF0032F297 /* Estabelecimentos.swift */; };
 		F9679AB083381B3214AFA80D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E47F11DFCEA1FDBC73878F3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		793B6E601D6887040032F297 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		793B6E621D688A650032F297 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		793B6E651D688C370032F297 /* OndeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OndeViewController.swift; sourceTree = "<group>"; };
+		793B6E671D6896AF0032F297 /* Agendamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agendamento.swift; sourceTree = "<group>"; };
+		793B6E681D6896AF0032F297 /* EstabelecimentoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstabelecimentoController.swift; sourceTree = "<group>"; };
+		793B6E691D6896AF0032F297 /* Estabelecimentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Estabelecimentos.swift; sourceTree = "<group>"; };
 		8D7B4581C5735438569A14A0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D9255493A6EE3182CF5FA482 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +84,7 @@
 		793B6E4A1D68847B0032F297 /* CortaPraMim */ = {
 			isa = PBXGroup;
 			children = (
+				793B6E6D1D6896BF0032F297 /* Model */,
 				793B6E641D688BFE0032F297 /* Controller */,
 				793B6E4B1D68847C0032F297 /* AppDelegate.swift */,
 				793B6E4D1D68847C0032F297 /* ViewController.swift */,
@@ -94,9 +101,19 @@
 		793B6E641D688BFE0032F297 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				793B6E681D6896AF0032F297 /* EstabelecimentoController.swift */,
 				793B6E651D688C370032F297 /* OndeViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		793B6E6D1D6896BF0032F297 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				793B6E671D6896AF0032F297 /* Agendamento.swift */,
+				793B6E691D6896AF0032F297 /* Estabelecimentos.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		DDF6150B2EF33BA483589AF2 /* Pods */ = {
@@ -231,11 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793B6E6C1D6896AF0032F297 /* Estabelecimentos.swift in Sources */,
 				793B6E631D688A650032F297 /* Globals.swift in Sources */,
+				793B6E6A1D6896AF0032F297 /* Agendamento.swift in Sources */,
 				793B6E4E1D68847C0032F297 /* ViewController.swift in Sources */,
-				AF5CDF401D688868002E633D /* Agendamento.swift in Sources */,
 				793B6E4C1D68847C0032F297 /* AppDelegate.swift in Sources */,
-				AF5CDF421D688A9C002E633D /* EstabelecimentoController.swift in Sources */,
+				793B6E6B1D6896AF0032F297 /* EstabelecimentoController.swift in Sources */,
 				793B6E541D68847C0032F297 /* CortaPraMim.xcdatamodeld in Sources */,
 				793B6E661D688C370032F297 /* OndeViewController.swift in Sources */,
 			);
