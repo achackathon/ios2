@@ -61,7 +61,43 @@ class EstabelecimentoController: NSObject {
         tche.location = CLLocationCoordinate2D(latitude: -19.939313, longitude: -43.936237)
         tche.Valor = 69.69
         
-        return [seuElias,maria,cortoPinto,fabs,cortFem,cortador,avenue,tche]
+        let fabs1 = Estabelecimento()
+        fabs1.Nome = "Unha fabulosa"
+        fabs1.Servico = TipoServicoController().Servicos[3]
+        fabs1.location = CLLocationCoordinate2D(latitude: -19.933719, longitude: -43.935053)
+        fabs1.Valor = 32.0
+        
+        let fabs2 = Estabelecimento()
+        fabs2.Nome = "Unha fabulosa"
+        fabs2.Servico = TipoServicoController().Servicos[3]
+        fabs2.location = CLLocationCoordinate2D(latitude: -19.933119, longitude: -43.935953)
+        fabs2.Valor = 32.0
+        
+        let seuElias1 = Estabelecimento()
+        seuElias1.Nome = "Salão do Macarrão"
+        seuElias1.Servico = TipoServicoController().Servicos[0]
+        seuElias1.location = CLLocationCoordinate2D(latitude: -19.934898, longitude: -43.933365)
+        seuElias1.Valor = 93.34
+        
+        let maria1 = Estabelecimento()
+        maria1.Nome = "Salão Linda"
+        maria1.Servico = TipoServicoController().Servicos[0]
+        maria1.location = CLLocationCoordinate2D(latitude: -19.936485, longitude: -43.9324676)
+        maria1.Valor = 233.44
+        
+        let seuElias2 = Estabelecimento()
+        seuElias2.Nome = "Salão Dirceu"
+        seuElias2.Servico = TipoServicoController().Servicos[0]
+        seuElias2.location = CLLocationCoordinate2D(latitude: -19.934698, longitude: -43.933485)
+        seuElias2.Valor = 93.34
+        
+        let maria2 = Estabelecimento()
+        maria2.Nome = "Salão Marta"
+        maria2.Servico = TipoServicoController().Servicos[0]
+        maria2.location = CLLocationCoordinate2D(latitude: -19.936035, longitude: -43.932616)
+        maria2.Valor = 23.44
+        
+        return [seuElias,maria,cortoPinto,fabs,cortFem,cortador,avenue,tche,fabs2,fabs1,seuElias1,seuElias2,maria1,maria2]
     }()
     
     
