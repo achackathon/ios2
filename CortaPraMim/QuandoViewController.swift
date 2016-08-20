@@ -17,4 +17,12 @@ class QuandoViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "voltarLocalSegue" {
+            if let destinationViewController = segue.destinationViewController as? OndeViewController {
+                destinationViewController.tipoServicoReq = self.estabelecimentoSel!.Servico
+            }
+        }
+    }
+    
 }
