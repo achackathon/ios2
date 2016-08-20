@@ -14,6 +14,7 @@ class AgendaController : UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBarHidden = true
         ListaHorario.dataSource = self
         ListaHorario.delegate = self
     }
