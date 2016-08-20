@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vjF-lJ-kB0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vjF-lJ-kB0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1666" y="397"/>
         </scene>
-        <!--View Controller-->
+        <!--Resumo View Controler-->
         <scene sceneID="Yxh-G2-i33">
             <objects>
-                <viewController id="Fsn-Ma-SEr" sceneMemberID="viewController">
+                <viewController id="Fsn-Ma-SEr" userLabel="Resumo View Controler" customClass="ResumoViewController" customModule="CortaPraMim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JDm-n1-qhY"/>
                         <viewControllerLayoutGuide type="bottom" id="7ua-Aw-yFO"/>
@@ -172,25 +172,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rj-FD-CcB">
-                                <rect key="frame" x="20" y="71" width="42" height="21"/>
+                                <rect key="frame" x="20" y="76" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeP-Nm-t5H">
-                                <rect key="frame" x="20" y="100" width="42" height="21"/>
+                                <rect key="frame" x="20" y="105" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgD-SQ-tPO">
-                                <rect key="frame" x="20" y="129" width="42" height="21"/>
+                                <rect key="frame" x="20" y="163" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKS-kF-5hd">
-                                <rect key="frame" x="20" y="158" width="42" height="21"/>
+                                <rect key="frame" x="20" y="134" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -199,7 +199,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="localAgendamento" destination="4Rj-FD-CcB" id="JEw-jp-kiY"/>
+                        <outlet property="horarioAtendimento" destination="TgD-SQ-tPO" id="15g-fd-dGR"/>
+                        <outlet property="localAgendamento" destination="4Rj-FD-CcB" id="1Nc-X9-hgL"/>
+                        <outlet property="precoAgendamento" destination="eeP-Nm-t5H" id="f70-R7-K8H"/>
+                        <outlet property="servicoAgendado" destination="jKS-kF-5hd" id="uzZ-yk-FKm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3X-DQ-etJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
