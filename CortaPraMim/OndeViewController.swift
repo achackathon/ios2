@@ -53,7 +53,7 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
                     let marker = GMSMarker()
                     marker.position = CLLocationCoordinate2DMake(item.location!.latitude, item.location!.longitude)
                     marker.title = item.Nome
-                    //marker.snippet = "Australia"
+                    marker.snippet = "Tipo de Serviço: \(item.Servico?.NomeServico)\nValor: R$ \(item.Valor)"
                     marker.map = self.mapView
                 }
             })
