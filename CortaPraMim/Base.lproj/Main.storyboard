@@ -18,15 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesoura" translatesAutoresizingMaskIntoConstraints="NO" id="n7q-O6-u95">
-                                <rect key="frame" x="180" y="95" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tesoura2" translatesAutoresizingMaskIntoConstraints="NO" id="n7q-O6-u95">
+                                <rect key="frame" x="180" y="72" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="JG3-wF-qdi"/>
                                     <constraint firstAttribute="height" constant="128" id="abA-kZ-Ntm"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corta Pra Mim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuM-Eh-USP">
-                                <rect key="frame" x="171" y="226" width="259" height="35"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuM-Eh-USP">
+                                <rect key="frame" x="171" y="201" width="259" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="IHe-Ac-Vnv"/>
                                     <constraint firstAttribute="width" constant="259" id="uy8-6g-U9c"/>
@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBc-a5-7my">
-                                <rect key="frame" x="170" y="331" width="260" height="150"/>
+                                <rect key="frame" x="170" y="376" width="260" height="150"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxF-c0-8h9">
                                         <rect key="frame" x="20" y="20" width="106" height="51"/>
@@ -113,15 +113,24 @@
                                     <constraint firstAttribute="bottom" secondItem="g1C-Wh-bks" secondAttribute="bottom" constant="20" id="wlk-Xx-vVb"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="BkK-K1-HGP">
+                                <rect key="frame" x="180" y="199" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Yhv-vf-gEk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="n7q-O6-u95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Af-LM-WZ1"/>
-                            <constraint firstItem="SuM-Eh-USP" firstAttribute="centerX" secondItem="cBc-a5-7my" secondAttribute="centerX" id="J89-kQ-TQs"/>
-                            <constraint firstItem="SuM-Eh-USP" firstAttribute="top" secondItem="n7q-O6-u95" secondAttribute="bottom" constant="3" id="L3q-FC-DeO"/>
+                            <constraint firstItem="SuM-Eh-USP" firstAttribute="top" secondItem="n7q-O6-u95" secondAttribute="bottom" constant="26" id="L3q-FC-DeO"/>
                             <constraint firstItem="SuM-Eh-USP" firstAttribute="trailing" secondItem="cBc-a5-7my" secondAttribute="trailing" id="PWB-Kn-pef"/>
-                            <constraint firstItem="n7q-O6-u95" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="iuB-tP-s7A"/>
-                            <constraint firstItem="cBc-a5-7my" firstAttribute="top" secondItem="SuM-Eh-USP" secondAttribute="bottom" constant="70" id="mbT-68-LML"/>
+                            <constraint firstItem="BkK-K1-HGP" firstAttribute="leading" secondItem="SuM-Eh-USP" secondAttribute="leading" constant="9" id="UqW-cB-9Ft"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BkK-K1-HGP" secondAttribute="bottom" constant="273" id="Xky-VK-EDY"/>
+                            <constraint firstItem="cBc-a5-7my" firstAttribute="top" secondItem="BkK-K1-HGP" secondAttribute="bottom" constant="49" id="fSE-cn-NjW"/>
+                            <constraint firstItem="n7q-O6-u95" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="iuB-tP-s7A"/>
+                            <constraint firstItem="cBc-a5-7my" firstAttribute="top" secondItem="SuM-Eh-USP" secondAttribute="bottom" constant="113" id="mbT-68-LML"/>
+                            <constraint firstItem="BkK-K1-HGP" firstAttribute="top" secondItem="SuM-Eh-USP" secondAttribute="bottom" constant="-37" id="omF-5U-xRP"/>
                             <constraint firstItem="n7q-O6-u95" firstAttribute="centerX" secondItem="SuM-Eh-USP" secondAttribute="centerX" id="wZU-3N-0X6"/>
                         </constraints>
                     </view>
@@ -400,7 +409,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tesoura" width="256" height="256"/>
+        <image name="launch" width="680" height="533"/>
+        <image name="tesoura2" width="576" height="576"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KKg-yj-RUH"/>
