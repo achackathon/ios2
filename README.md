@@ -1,4 +1,4 @@
-Corta pra mim - Agendamento de serviços
+Corta pra mim - Agendamento de serviços de barbearia.
 ========================================
 
 Sobre o Aplicativo
