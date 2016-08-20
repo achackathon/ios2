@@ -16,13 +16,22 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     var listaEstabelecimentos : [Estabelecimento]?
     var tipoServicoReq : TipoServico?
     var estabelecimentoSel : Estabelecimento?
+    var placeHolder = GMSMarker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         mapView.delegate = self
         mapView.myLocationEnabled = true
         mapView.settings.myLocationButton = true
+        
+        placeHolder.icon = UIImage(named: "placeholder")
+        placeHolder.title = "Você"
+        placeHolder.groundAnchor = CGPoint(x: 0.5, y: 1)
+        placeHolder.appearAnimation = kGMSMarkerAnimationPop
+        placeHolder.map = self.mapView
+        
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
     }
@@ -34,17 +43,19 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         
         if status == CLAuthorizationStatus.AuthorizedWhenInUse {
             locationManager.startUpdatingLocation()
-            
-            mapView.myLocationEnabled = true
-            mapView.settings.myLocationButton = true
         }
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         locationManager.stopUpdatingLocation()
+        mapView.myLocationEnabled = false
+        mapView.settings.myLocationButton = false
         
         if let location = locations.first! as CLLocation! {
+            
+            placeHolder.position = location.coordinate
+            
             listaEstabelecimentos = EstabelecimentoController.getEstabelecimentoPorServico(self.tipoServicoReq!.idServico!, local: location.coordinate)
             
             dispatch_async(dispatch_get_main_queue(), {
@@ -66,6 +77,11 @@ class OndeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     }
     
     func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
+        
+        if marker == self.placeHolder {
+            return true
+        }
+        
         let estab = marker as! PlaceMarker
         self.estabelecimentoSel = estab.estabelecimento
 
