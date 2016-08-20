@@ -16,8 +16,6 @@ class AgendaController : UIViewController, UITableViewDelegate, UITableViewDataS
         super.viewDidLoad()
         ListaHorario.dataSource = self
         ListaHorario.delegate = self
-        
-        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,13 +25,22 @@ class AgendaController : UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("HorarioCell") as UITableViewCell!
         let agen = AppDelegate.listaAgendamento[indexPath.row]
-        cell!.textLabel?.text = "\(agen.Servico?.NomeServico)! - \(agen.NomeEstabelecimento) - R$ \(agen.Valor?.format(".2"))"
+        cell!.textLabel?.text = "\(agen.Servico!.NomeServico!) - \(agen.NomeEstabelecimento!) - R$ \(agen.Valor!.format(".2"))"
         return cell!
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //        horarioSelecionado = horariosDisponiveis![indexPath.row].hora
         
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            AppDelegate.listaAgendamento.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        } else if editingStyle == .Insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
     }
 }
 

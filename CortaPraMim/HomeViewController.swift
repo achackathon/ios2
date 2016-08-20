@@ -11,10 +11,13 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var viewServicos: UIView!
+    @IBOutlet weak var agendamentosButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.viewServicos.layer.cornerRadius = 40
+        self.agendamentosButton.layer.cornerRadius = 20
     }
 
     override func didReceiveMemoryWarning() {
