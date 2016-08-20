@@ -125,7 +125,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYM-qA-grN">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Onde" id="BY7-za-iN9">
+                                    <navigationItem title="Selecione o local" id="BY7-za-iN9">
                                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="Zpe-pN-vwA"/>
                                         <barButtonItem key="rightBarButtonItem" title="Quando" id="UDE-zw-SfH"/>
                                     </navigationItem>
