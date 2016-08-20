@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0A84D21D68A392005D7180 /* ResumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A84D11D68A392005D7180 /* ResumoViewController.swift */; };
 		793B6E4C1D68847C0032F297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E4B1D68847C0032F297 /* AppDelegate.swift */; };
 		793B6E4E1D68847C0032F297 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E4D1D68847C0032F297 /* HomeViewController.swift */; };
 		793B6E511D68847C0032F297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793B6E4F1D68847C0032F297 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B0A84D11D68A392005D7180 /* ResumoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumoViewController.swift; sourceTree = "<group>"; };
 		3E47F11DFCEA1FDBC73878F3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		793B6E481D68847B0032F297 /* CortaPraMim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CortaPraMim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793B6E4B1D68847C0032F297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				AF3D652E1D689ED400880067 /* TipoServicoController.swift */,
 				793B6E681D6896AF0032F297 /* EstabelecimentoController.swift */,
 				793B6E651D688C370032F297 /* OndeViewController.swift */,
+				3B0A84D11D68A392005D7180 /* ResumoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				AF3D652D1D689ECD00880067 /* TipoServico.swift in Sources */,
 				793B6E541D68847C0032F297 /* CortaPraMim.xcdatamodeld in Sources */,
 				793B6E661D688C370032F297 /* OndeViewController.swift in Sources */,
+				3B0A84D21D68A392005D7180 /* ResumoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
