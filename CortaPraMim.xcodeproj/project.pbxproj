@@ -21,6 +21,7 @@
 		793B6E6C1D6896AF0032F297 /* Estabelecimentos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B6E691D6896AF0032F297 /* Estabelecimentos.swift */; };
 		AF3D652D1D689ECD00880067 /* TipoServico.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D652C1D689ECD00880067 /* TipoServico.swift */; };
 		AF3D652F1D689ED400880067 /* TipoServicoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D652E1D689ED400880067 /* TipoServicoController.swift */; };
+		AF3D65341D68AAA700880067 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D65331D68AAA700880067 /* Extension.swift */; };
 		F9679AB083381B3214AFA80D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E47F11DFCEA1FDBC73878F3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		8D7B4581C5735438569A14A0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF3D652C1D689ECD00880067 /* TipoServico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoServico.swift; sourceTree = "<group>"; };
 		AF3D652E1D689ED400880067 /* TipoServicoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoServicoController.swift; sourceTree = "<group>"; };
+		AF3D65331D68AAA700880067 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		D9255493A6EE3182CF5FA482 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		793B6E4A1D68847B0032F297 /* CortaPraMim */ = {
 			isa = PBXGroup;
 			children = (
+				AF3D65301D68AA9000880067 /* Helper */,
 				793B6E6D1D6896BF0032F297 /* Model */,
 				793B6E641D688BFE0032F297 /* Controller */,
 				793B6E4B1D68847C0032F297 /* AppDelegate.swift */,
@@ -120,6 +123,14 @@
 				793B6E691D6896AF0032F297 /* Estabelecimentos.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		AF3D65301D68AA9000880067 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D65331D68AAA700880067 /* Extension.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		DDF6150B2EF33BA483589AF2 /* Pods */ = {
@@ -257,6 +268,7 @@
 				793B6E6C1D6896AF0032F297 /* Estabelecimentos.swift in Sources */,
 				AF3D652F1D689ED400880067 /* TipoServicoController.swift in Sources */,
 				793B6E631D688A650032F297 /* Globals.swift in Sources */,
+				AF3D65341D68AAA700880067 /* Extension.swift in Sources */,
 				793B6E6A1D6896AF0032F297 /* Agendamento.swift in Sources */,
 				793B6E4E1D68847C0032F297 /* ViewController.swift in Sources */,
 				793B6E4C1D68847C0032F297 /* AppDelegate.swift in Sources */,

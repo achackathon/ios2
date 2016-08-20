@@ -72,7 +72,7 @@ class EstabelecimentoController: NSObject {
     class func getEstabelecimentoPorServico(tipoServico: Int, local: CLLocationCoordinate2D) -> [Estabelecimento]{
         var estabs = [Estabelecimento]()
         for estab in MeusEstabelecimentos {
-            if  estab.Servico?.idServico == tipoServico {
+            if  estab.Servico.idServico == tipoServico {
                 estabs.append(estab)
             }
         }
