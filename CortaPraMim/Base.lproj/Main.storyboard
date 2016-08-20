@@ -119,46 +119,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBO-60-4gZ" customClass="GMSMapView">
-                                <rect key="frame" x="20" y="65" width="560" height="447"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qk3-Uh-8gC">
-                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="65" width="600" height="535"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="tvt-2P-KYg"/>
-                                </constraints>
-                                <state key="normal" title="Próximo passo">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Fsn-Ma-SEr" kind="showDetail" id="rau-8R-jae"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euy-cK-Kfa">
-                                <rect key="frame" x="253" y="20" width="94" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="94" id="3NW-ZI-2tS"/>
-                                    <constraint firstAttribute="height" constant="31" id="AbU-6b-U8v"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="37"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYM-qA-grN">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Onde" id="BY7-za-iN9">
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Zpe-pN-vwA"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Quando" id="UDE-zw-SfH"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JkW-ey-Vz0" firstAttribute="top" secondItem="LBO-60-4gZ" secondAttribute="bottom" id="15l-CX-1NM"/>
                             <constraint firstItem="LBO-60-4gZ" firstAttribute="leading" secondItem="Iwg-yM-3ee" secondAttribute="leadingMargin" id="AXu-Sz-Hpt"/>
-                            <constraint firstItem="Qk3-Uh-8gC" firstAttribute="top" secondItem="LBO-60-4gZ" secondAttribute="bottom" constant="38" id="BUn-kx-Rmn"/>
-                            <constraint firstItem="LBO-60-4gZ" firstAttribute="centerX" secondItem="Qk3-Uh-8gC" secondAttribute="centerX" id="Lbo-Yo-4a7"/>
-                            <constraint firstItem="Euy-cK-Kfa" firstAttribute="centerX" secondItem="LBO-60-4gZ" secondAttribute="centerX" id="Z8F-7v-mWP"/>
-                            <constraint firstItem="Qk3-Uh-8gC" firstAttribute="bottom" secondItem="JkW-ey-Vz0" secondAttribute="top" id="cXp-h9-d9G"/>
-                            <constraint firstItem="Qk3-Uh-8gC" firstAttribute="leading" secondItem="Iwg-yM-3ee" secondAttribute="leading" id="sCo-J5-8pA"/>
-                            <constraint firstItem="LBO-60-4gZ" firstAttribute="top" secondItem="Euy-cK-Kfa" secondAttribute="bottom" constant="14" id="uMH-UL-XIT"/>
-                            <constraint firstItem="Euy-cK-Kfa" firstAttribute="top" secondItem="Iwg-yM-3ee" secondAttribute="top" constant="20" symbolic="YES" id="xEt-FI-aDm"/>
-                            <constraint firstAttribute="trailing" secondItem="Qk3-Uh-8gC" secondAttribute="trailing" id="yUJ-2P-tge"/>
+                            <constraint firstItem="yYM-qA-grN" firstAttribute="leading" secondItem="LBO-60-4gZ" secondAttribute="leading" id="NGy-KP-geV"/>
+                            <constraint firstItem="yYM-qA-grN" firstAttribute="trailing" secondItem="LBO-60-4gZ" secondAttribute="trailing" id="b0k-qF-9pM"/>
+                            <constraint firstItem="yYM-qA-grN" firstAttribute="top" secondItem="TNI-Vd-6tp" secondAttribute="bottom" id="dbf-ci-h7q"/>
+                            <constraint firstItem="LBO-60-4gZ" firstAttribute="top" secondItem="yYM-qA-grN" secondAttribute="bottom" constant="1" id="f7x-IZ-AWR"/>
+                            <constraint firstItem="LBO-60-4gZ" firstAttribute="trailing" secondItem="Iwg-yM-3ee" secondAttribute="trailing" id="jS8-ef-MBP"/>
+                            <constraint firstItem="LBO-60-4gZ" firstAttribute="leading" secondItem="Iwg-yM-3ee" secondAttribute="leading" id="nYw-Ba-OXz"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="LBO-60-4gZ" id="xGp-8s-LR6"/>
                     </connections>
