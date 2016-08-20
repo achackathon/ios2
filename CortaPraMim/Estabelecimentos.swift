@@ -11,7 +11,7 @@ import UIKit
 class Estabelecimento: NSObject {
     
     var Nome: String?
-    var Servico: String?
+    var Servico: TipoServico?
     var Valor: Double?
 
     
