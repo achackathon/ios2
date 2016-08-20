@@ -25,6 +25,7 @@
 		AF3D652D1D689ECD00880067 /* TipoServico.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D652C1D689ECD00880067 /* TipoServico.swift */; };
 		AF3D652F1D689ED400880067 /* TipoServicoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D652E1D689ED400880067 /* TipoServicoController.swift */; };
 		AF3D65341D68AAA700880067 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D65331D68AAA700880067 /* Extension.swift */; };
+		AF71E5C91D68F313005634DF /* AgendaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71E5C81D68F313005634DF /* AgendaController.swift */; };
 		AFC6FD751D68CC5900C172C5 /* AgendamentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6FD741D68CC5900C172C5 /* AgendamentoController.swift */; };
 		F9679AB083381B3214AFA80D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E47F11DFCEA1FDBC73878F3 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		AF3D652C1D689ECD00880067 /* TipoServico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoServico.swift; sourceTree = "<group>"; };
 		AF3D652E1D689ED400880067 /* TipoServicoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoServicoController.swift; sourceTree = "<group>"; };
 		AF3D65331D68AAA700880067 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AF71E5C81D68F313005634DF /* AgendaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaController.swift; sourceTree = "<group>"; };
 		AFC6FD741D68CC5900C172C5 /* AgendamentoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendamentoController.swift; sourceTree = "<group>"; };
 		D9255493A6EE3182CF5FA482 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				3B0A84D11D68A392005D7180 /* ResumoViewController.swift */,
 				793B6E6E1D68B84F0032F297 /* PlaceMarker.swift */,
 				AFC6FD741D68CC5900C172C5 /* AgendamentoController.swift */,
+				AF71E5C81D68F313005634DF /* AgendaController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				793B6E731D68C6E70032F297 /* QuandoViewController.swift in Sources */,
 				793B6E631D688A650032F297 /* Globals.swift in Sources */,
 				AF3D65341D68AAA700880067 /* Extension.swift in Sources */,
+				AF71E5C91D68F313005634DF /* AgendaController.swift in Sources */,
 				793B6E6A1D6896AF0032F297 /* Agendamento.swift in Sources */,
 				AFC6FD751D68CC5900C172C5 /* AgendamentoController.swift in Sources */,
 				793B6E4E1D68847C0032F297 /* HomeViewController.swift in Sources */,
