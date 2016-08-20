@@ -24,6 +24,10 @@ class HomeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        if segue.identifier == "AgendamentosSegue" {
+            return
+        }
+        
         let destination = segue.destinationViewController as! OndeViewController
         let tipoServReq = TipoServico()
         
