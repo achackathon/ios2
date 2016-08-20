@@ -1,4 +1,5 @@
 //
+
 //  ResumoViewController.swift
 //  CortaPraMim
 //
@@ -14,6 +15,9 @@ class ResumoViewController: UIViewController {
     @IBOutlet weak var horarioAtendimento: UILabel!
     @IBOutlet weak var precoAgendamento: UILabel!
     @IBOutlet weak var servicoAgendado: UILabel!
+    
+    var estabelecimentoSel : Estabelecimento?
+    var horarioSelecionado: Int?
     
     @IBAction func finalizar(sender: AnyObject) {
         let alert = UIAlertController(title: "Corta pra mim", message: "Pedido finalizado com sucesso!", preferredStyle: UIAlertControllerStyle.Alert)
@@ -31,10 +35,15 @@ class ResumoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        localAgendamento.text = agendamento.NomeEstabelecimento
-        horarioAtendimento.text = String(agendamento.Horario)
-        precoAgendamento.text = "R$" + String(agendamento.Valor)
-        servicoAgendado.text = agendamento.Servico
+        localAgendamento.text = estabelecimentoSel?.Nome
+        if let hora = horarioSelecionado {
+            horarioAtendimento.text = "20/08/2016 " +  String(hora) + ":00"
+        }
+        
+        if let val = estabelecimentoSel?.Valor {
+         precoAgendamento.text = "R$ " + String(val)
+        }
+        servicoAgendado.text = estabelecimentoSel?.Servico.NomeServico
     }
     
 }

@@ -14,7 +14,16 @@ class Agendamento: NSObject {
     var NomeEstabelecimento: String?
     var Servico: String?
     var Valor: Double?
-    var Horario: NSDate?
+    var Dia: NSDate?
+    var Hora: Int? 
+    var Marcado: Bool?
     
+    
+}
+
+
+class Horario {
+    var hora: Int?
+    var Ocupado: Bool?
     
 }
